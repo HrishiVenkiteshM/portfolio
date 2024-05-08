@@ -133,6 +133,7 @@
     min-height: 100vh;
     position: relative;
     background-color: rgba(0, 0, 0, 0.5); 
+    padding-right: 2%;
 }
 #projects h3
 {
@@ -178,6 +179,7 @@
     min-height: 100vh;
     position: relative;
     background-color: rgba(0, 0, 0, 0.5);
+    padding-right: 2%;
 }
 
 /* #education:hover {
@@ -222,6 +224,7 @@
     align-items: center;
     min-height: 100vh;
     position: relative; 
+    padding-right: 2%;
 }
 
 /* #certification:hover {
