@@ -98,34 +98,53 @@
     font-size: 16px;
     padding-top: 10px;
   }
-  #experience p
-  {
-    margin-top: 5px;
-    font-family: "Inter", sans-serif;
-    letter-spacing: 2px;
-    font-size: 16px;
-    color: #c1bfbf;
-    line-height: 2;
+   #experience p {
+    color: lightblue;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+    text-align: justify;
+    margin-right: 1cm;
   }
-  #projects
-  {
+  
+  #experience h4:hover + #content {
+    max-height: 500px; 
+  }
+  #projects {
     padding: 0 0 0 90px;
-    background-color: black;
-    color: #bea060;
+    color: black;
     font-family: "Inter", sans-serif;
     font-size: 16px;
     line-height: 1.2em;
     font-weight: 500;
     letter-spacing: 2px;
     padding-bottom: 10px;
-    padding-top:3cm;
-  }
+    padding-top: 3cm;
+    background-image: url(https://static.wixstatic.com/media/bd0a9d_7ea3fad90c0c4cfb92c963f44f28bc1a~mv2.gif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    filter: contrast(80%);
+    filter:opacity(90%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+#projects h3
+{
+  background-color: #bea060;
+}
   #projects h4
   {
-    color: #bea060;
+    color: black;
     font-family: "Inter", sans-serif;
     font-size: 16px;
     padding-top: 10px;
+    background-color: #bea060;
   }
   #projects p
   {
@@ -134,11 +153,13 @@
     font-family: "Inter", sans-serif;
     letter-spacing: 2px;
     font-size: 16px;
-    color: #c1bfbf;
+    position:relative;
+    z-index: 1;
+    color: black;
     line-height: 2;
+    background-color: #bea060;
   }
-  #education
-  {
+  #education {
     padding: 0 0 0 90px;
     background-color: black;
     color: #bea060;
@@ -148,8 +169,21 @@
     font-weight: 500;
     letter-spacing: 2px;
     padding-bottom: 10px;
-    padding-top:3cm;
-  }
+    padding-top: 3cm;
+    background-image: url(https://wallpaperaccess.com/full/5652030.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* #education:hover {
+    transform: scale(1.1);
+} */
+
   #education h4
   {
     color: #bea060;
@@ -167,7 +201,39 @@
     color: #c1bfbf;
     line-height: 2;
   }
-  #certification
+  #certification {
+    padding: 0 0 0 90px;
+    background-color: black;
+    color: #bea060;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 5.5em;
+    font-weight: 500;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    padding-top: 2px;
+    background-image: url(https://c10.patreonusercontent.com/4/patreon-media/p/post/54031713/0a222b8b9b2f4ffc9f51723cdc032146/eyJiIjo3MCwiaCI6MzQ5LCJ3Ijo2MjB9/1.gif?token-time=2145916800&token-hash=CcBnc_ZNseAxU4nc1ho8hlUAKDfTi4ckHY3hPNYHsMY%3D);
+    background-size: cover;
+    background-attachment: fixed; 
+    /* filter: contrast(50%); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative; 
+}
+
+/* #certification:hover {
+    transform: scale(1.1);
+} */
+#contact h3
+{
+  padding-bottom: 4%;
+  text-align: center;
+  padding-top: 1%;
+}
+  #contact
   {
     padding: 0 0 0 90px;
     background-color: black;
@@ -179,6 +245,9 @@
     letter-spacing: 2px;
     padding-bottom: 10px;
     padding-top:3cm;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1697adb8-bfb5-49b1-85c1-efde49d71052/dcxuq07-97996a2d-1833-4256-bbf5-4b979098765b.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE2OTdhZGI4LWJmYjUtNDliMS04NWMxLWVmZGU0OWQ3MTA1MlwvZGN4dXEwNy05Nzk5NmEyZC0xODMzLTQyNTYtYmJmNS00Yjk3OTA5ODc2NWIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.-EFscCgfd20S5YLV7vTF00MzWmP-IsRkEJ2ARYVcx-w);
+    background-size: cover;
+    background-attachment: fixed;
   }
   #certification ul
   {
@@ -196,4 +265,73 @@
     color:white;
 
   }
+  /* footer
+  {
+    padding: 0 0 0 90px;
+    background-color: black;
+    color: #bea060;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 1.2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    padding-top:3cm;
+    text-align: center;
+  } */
+  #logo
+  {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 2px;
+    font-size: 16px;
+    color: #c1bfbf;
+    line-height: 2;
+  }
+  #logo .fa-solid.fa-phone {
+    border-style: dotted;
+    border-radius: 20%;
+    font-size: xx-large;
+    margin-right:5%;
+  }
+  #logo .fa-solid.fa-envelope {
+    border-style: dotted;
+    border-radius: 20%;
+    font-size: xx-large;
+    margin-right:5%;
+  }
+  #logo .fa-brands.fa-x-twitter {
+    border-style: dotted;
+    border-radius: 20%;
+    font-size: xx-large;
+    margin-right:5%;
+  }
+  #logo .fa-brands.fa-instagram {
+    border-style: dotted;
+    border-radius: 20%;
+    font-size: xx-large;
+    margin-right:5%;
+  }
+  #logo .fa-solid.fa-phone,
+  #logo .fa-solid.fa-envelope,
+  #logo .fa-brands.fa-x-twitterr,
+  #logo .fa-brands.fa-instagram {
+      border-style: dotted;
+      border-radius: 20%;
+      font-size: xx-large;
+      margin-right: 5%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
   
+  #logo .fa-solid.fa-phone:hover,
+  #logo .fa-solid.fa-envelope:hover,
+  #logo .fa-brands.fa-x-twitter:hover,
+  #logo .fa-brands.fa-instagram:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  }
+  .hidden {
+    display: none;
+}
